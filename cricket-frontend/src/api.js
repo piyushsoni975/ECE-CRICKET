@@ -1,8 +1,8 @@
 import axios from "axios";
 
-// use env var in prod, fallback to local for dev
-const baseURL =
-  import.meta.env.VITE_API_BASE || "https://ece-cricket-kf9n.vercel.app/";
+// In prod, set Vercel env: VITE_API_URL=https://<your-backend>.vercel.app/api
+// In dev, it falls back to localhost:5000/api
+const baseURL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 export const api = axios.create({ baseURL });
 
