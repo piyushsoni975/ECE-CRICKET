@@ -7,7 +7,7 @@ import matchRoutes from "./routes/matches.js";
 dotenv.config();
 const app = express();
 const ALLOWED = [
-  "http://localhost:5173",
+  
   process.env.FRONTEND_URL,        // e.g. https://your-frontend.vercel.app
 ];
 

@@ -17,7 +17,7 @@ router.get("/stream", (req, res) => {
     Connection: "keep-alive",
   });
   // CORS (same origin as your client dev)
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
+  res.setHeader("Access-Control-Allow-Origin",process.env.FRONTEND_URL);
 
   res.flushHeaders?.();
   viewers++;
