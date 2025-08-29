@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Smooth fonts & scrollbar */
+html, body { color-scheme: dark; }
+* { scrollbar-width: thin; scrollbar-color: #334155 transparent; }
+/* add once */
+@keyframes stars { from { background-position:0 0 } to { background-position:-1400px 0 } }
+.animate-stars { animation: stars 120s linear infinite; }
